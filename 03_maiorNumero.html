@@ -7,11 +7,18 @@
     */
 
     //ENTRADA
+    let numeros = []
+    let maior = []
+    for (i = 1; i <= 5; i++) {
+        numeros[i] = Number(prompt(`Digite um numero ${i}: `))
+    }
 
-    
     //PROCESSAMENTO
+    numeros.sort((a, b) => b - a)
+    maior.push(numeros[0])
+    numeros.sort((a, b) => a - b)
+    document.write(`Os números são: ${numeros} <br> E o maior número é: ${maior}`)
 
-    
     //SAÍDA
 
 </script>

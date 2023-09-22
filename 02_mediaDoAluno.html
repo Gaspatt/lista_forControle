@@ -7,11 +7,18 @@
     */
 
     //ENTRADA
-    
+    const qnotas = Number(prompt('Quantas notas você obteve?').trim())
+    let somaNota = 0
+    let media = 0
 
     //PROCESSAMENTO
-    
+    for (itens = 1; itens <= qnotas; itens++) {
+        const nota = Number(prompt(`Digite a nota ${itens}`))
+        somaNota+= nota
+        media = somaNota / qnotas
+    }
 
     //SAÍDA
-
+    
+    document.write(`A média é: ${media.toFixed(2)}`)
 </script>
