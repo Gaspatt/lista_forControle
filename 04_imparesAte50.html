@@ -6,11 +6,21 @@
     */
 
     //ENTRADA
+    let impar = []
+    let par = []
 
 
     //PROCESSAMENTO
-
+    for (i = 0; i <= 50; i++) {
+        if (i % 2 != 0) {
+            impar.push(i)
+        }
+        else {
+            par.push(i)
+        }
+    }
 
     //SAÍDA
+    document.write(`Os números impares são: ${impar.join(', ')}`)
 
 </script>

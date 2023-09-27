@@ -6,11 +6,22 @@
     */
 
     //ENTRADA
-
+    const numeroIni = Number(prompt(`Informe o número inicial:`))
+    const numeroFinal = Number(prompt('Informe o número final:'))
+    let impar = []
+    let par = []
     
     //PROCESSAMENTO
-
+    for (i = numeroIni; i <= numeroFinal; i++) {
+        if (i % 2 == 0) {
+            par.push(i)
+        }
+        else {
+           
+            impar.push(i)
+        }
+    }
     
     //SAÍDA
-
+    document.write(`Números impares: ${impar}`)
 </script>
